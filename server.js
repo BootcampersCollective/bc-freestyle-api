@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-
+var goods = require("'./routes/goods.js'")
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -9,11 +9,14 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(express.static("public"));
+app.use("/api/goods", goods)
 
 app.use(function(req, res, next) {
     res.status(404);
     res.send('404 file not found!');
 });
+
+
 app.use(function(err, req, res , next) {
     console.log(err);
     res.status(500);
@@ -28,3 +31,6 @@ function startListening() {
 }
 
 startListening();
+
+
+// module.exports = app
