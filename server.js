@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 const users = require('./routes/users');
+const index = require('./routes/index');
+
 
 //parses json data or urlencoded data recieved from front end
 app.use(bodyParser.json());
@@ -16,6 +18,8 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', index);
 
 app.use('/users', users);
 
