@@ -44,13 +44,10 @@ router.get("/name/:name" , function (req, res){
   }
   res.send(response)
 })
-// 
+
 // router.post('/:id', function(req, res) {
 //   var id = req.params.id;
 // });
-//
-// router.put('/:id', function(req, res) {
-//
-// });
+
 
 module.exports = router;
