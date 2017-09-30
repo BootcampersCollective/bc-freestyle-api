@@ -1,0 +1,25 @@
+{
+  "name": "bc-freestyle-api",
+  "version": "1.0.0",
+  "description": "backend for freestyle ",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BootcampersCollective/bc-freestyle-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BootcampersCollective/bc-freestyle-api/issues"
+  },
+  "homepage": "https://github.com/BootcampersCollective/bc-freestyle-api#readme"
+}
