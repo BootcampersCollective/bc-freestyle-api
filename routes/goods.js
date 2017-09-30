@@ -1,17 +1,9 @@
 var express = require('express');
 var router = express.Router();
-//var database area from Yukio
+var database = require("../data/data.json")
 
-// router.get("/", function (req, res){
-//   res.send(database)
-// })
-//
-// router.get("/", function (req, res){
-//   res.send(database)
-// })
-//
-// router.get("/", function (req, res){
-//   res.send(database)
-// })
+router.get("/", function (req, res){
+  res.json(database.goods)
+})
 
 module.exports = router;
