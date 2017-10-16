@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-var goods = require("'./routes/goods.js'")
+var goods = require("./routes/goods.js")
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
