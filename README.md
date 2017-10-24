@@ -34,6 +34,5 @@ Repository for the Freestyle Hackathon Food Tracker website.
 
 * Please check the issues page at [waffle.io]("https://waffle.io/BootcampersCollective/bc-freestyle-api")
 
-
 ## Routes:
 coming soon
