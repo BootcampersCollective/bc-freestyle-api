@@ -1,7 +1,10 @@
-var express = require("express");
-var app = express();
-var bodyParser = require("body-parser");
-var goods = require("./routes/goods.js")
+const express     = require("express");
+const bodyParser  = require("body-parser");
+const goods       = require("./routes/goods.js");
+const chalk       = require("chalk");
+
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -9,28 +12,22 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(express.static("public"));
-app.use("/api/goods", goods)
+app.use("/api/goods", goods);
 
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
     res.status(404);
     res.send('404 file not found!');
 });
 
 
-app.use(function(err, req, res , next) {
+app.use((err, req, res, next) => {
     console.log(err);
     res.status(500);
     res.send('500 internal server error');
     res.send(err);
 });
 
-function startListening() {
-    app.listen(8000, function() {
-        console.log("server is started: http://localhost:8000 ⚡️");
-    });
-}
-
-startListening();
-
-
-// module.exports = app
+const server = app.listen(PORT, () => {
+  const host = "http://localhost:" + PORT;
+  console.log("Starting server on: " + chalk.white.bold(host));
+});
