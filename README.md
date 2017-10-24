@@ -1,1 +1,2 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/BootcampersCollective/bc-freestyle-api.png?columns=all)](https://waffle.io/BootcampersCollective/bc-freestyle-api?utm_source=badge)
 # bc-freestyle-api
