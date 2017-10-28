@@ -1,5 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import morgan from 'morgan';
 import goods from './routes/goods';
 import chalk from 'chalk';
 
@@ -10,6 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+app.use(morgan("combined"));
 
 app.use(express.static("public"));
 app.use("/api/goods", goods);
