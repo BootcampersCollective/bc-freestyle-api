@@ -36,3 +36,24 @@ Repository for the Freestyle Hackathon Food Tracker website.
 
 ## Routes:
 coming soon
+
+To install data.json and fakeUsers.json in your local mongo database do the following.
+
+
+In your terminal initialize `mongod`, open a new tab and type
+
+```
+mongoimport --db <nameOfDB> --collection <nameOfCollection> --drop --file path/to/file/file.json
+```
+
+To see if it worked go to the MongoShell by typing `mongo` then `show dbs`, the shell will display a list of all the dbs that are running locally.
+
+To use the newly created one type `use <nameOfDB>`, now you should be able to interact with the database.
+
+To take a look at all the records type
+
+```
+db.<nameOfCollectio>.find().pretty()
+```
+
+This will show all the records inside that collection
