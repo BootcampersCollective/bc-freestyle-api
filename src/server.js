@@ -1,7 +1,12 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import morgan from 'morgan';
 import goods from './routes/goods';
 import chalk from 'chalk';
+
+// starting mongoose connection
+mongoose.createConnection('mongodb://localhost:27017/freestyle');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+app.use(morgan("combined"));
 
 app.use(express.static("public"));
 app.use("/api/goods", goods);
