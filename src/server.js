@@ -5,6 +5,9 @@ import morgan from 'morgan';
 import goods from './routes/goods';
 import chalk from 'chalk';
 
+// starting mongoose connection
+mongoose.createConnection('mongodb://localhost:27017/freestyle');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
