@@ -1,56 +1,48 @@
-var express = require('express');
-var router = express.Router();
-var database = require("../data/data.json")
+const express        = require('express');
+const database       = require("../data/data.json");
+const router         = express.Router();
 
-router.get("/", function (req, res){
-  res.json(database.goods)
-})
+router.get("/", (req, res) => {
+  res.json(database.goods);
+});
 
-router.get("/categories/:categories" , function (req, res){
-  var categories = req.params.categories;
-  var data = database.goods;
-  var response = [];
+router.get("/categories/:categories" , (req, res) => {
+  const categories = req.params.categories;
+  const data = database.goods;
+  let response = [];
 
-  for (var i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].categories == categories) {
-      response.push(data[i])
+      response.push(data[i]);
     }
   }
-  res.send(response)
-})
+  res.send(response);
+});
 
-router.get("/id/:id" , function (req, res){
-  var id = req.params.id;
-  var data = database.goods;
-  var response = [];
+router.get("/id/:id" , (req, res) => {
+  const id = req.params.id;
+  const data = database.goods;
+  let response = [];
 
-  for (var i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].id == id) {
-      response.push(data[i])
+      response.push(data[i]);
     }
   }
-  res.send(response)
-})
+  res.send(response);
+});
 
-router.get("/name/:name" , function (req, res){
-  var name = req.params.name;
-  var data = database.goods;
-  var response = [];
+router.get("/name/:name" , (req, res) => {
+  const name = req.params.name;
+  const data = database.goods;
+  let response = [];
 
-  for (var i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].name == name) {
-      response.push(data[i])
+      response.push(data[i]);
     }
   }
-  res.send(response)
-})
-// 
-// router.post('/:id', function(req, res) {
-//   var id = req.params.id;
-// });
-//
-// router.put('/:id', function(req, res) {
-//
-// });
+  res.send(response);
+});
 
 module.exports = router;
