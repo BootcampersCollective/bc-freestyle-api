@@ -1,5 +1,7 @@
-const express        = require('express');
-const database       = require("../data/data.json");
+// const express        = require('express');
+// const database       = require("../data/data.json");
+import express from 'express';
+import database from '../data/data.json';
 const router         = express.Router();
 
 router.get("/", (req, res) => {
