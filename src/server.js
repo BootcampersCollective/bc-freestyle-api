@@ -1,7 +1,7 @@
-const express     = require("express");
-const bodyParser  = require("body-parser");
-const goods       = require("./routes/goods.js");
-const chalk       = require("chalk");
+import express from 'express';
+import bodyParser from 'body-parser';
+import goods from './routes/goods';
+import chalk from 'chalk';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
