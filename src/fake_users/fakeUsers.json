@@ -1,7 +1,5 @@
-{
-  "users": [
+
     {
-      "id": "5fa6cfb1-f139-4ef4-b84b-bef3d571bc2f",
       "name": "Blair",
       "email": "Dan_Rodriguez94@gmail.com",
       "phone": "399.288.4951",
@@ -12,9 +10,8 @@
         "longitude": "111.1879"
       },
       "description": "Dolores perferendis est sed labore aliquid."
-    },
+    }
     {
-      "id": "804991c9-573a-40b4-ac6b-3b710d03669e",
       "name": "Elmo",
       "email": "Ettie_Prosacco2@yahoo.com",
       "phone": "525-080-7934 x134",
@@ -25,9 +22,8 @@
         "longitude": "-145.7852"
       },
       "description": "Molestias est velit et ut minus quam quisquam voluptas perspiciatis."
-    },
+    }
     {
-      "id": "562007b4-d691-4b17-bac9-a33d7e6edb5a",
       "name": "Isaiah",
       "email": "Zander_Goldner97@hotmail.com",
       "phone": "1-913-681-7798",
@@ -38,9 +34,8 @@
         "longitude": "-170.8320"
       },
       "description": "Nihil debitis enim eos cum necessitatibus iure nemo veniam dolorem."
-    },
+    }
     {
-      "id": "ef3cbaee-3115-4950-869b-25b30436758d",
       "name": "Jamel",
       "email": "Caleb80@hotmail.com",
       "phone": "914.568.1123 x389",
@@ -51,9 +46,8 @@
         "longitude": "56.9732"
       },
       "description": "Dolorem delectus rerum nihil in laudantium."
-    },
+    }
     {
-      "id": "ee9db8b4-21c4-47b2-a99e-a25037534d16",
       "name": "Adan",
       "email": "Van_Dare7@hotmail.com",
       "phone": "(215) 085-2142 x193",
@@ -64,9 +58,8 @@
         "longitude": "163.9482"
       },
       "description": "Aut quidem facere saepe qui iure dolorum natus quam."
-    },
+    }
     {
-      "id": "12a7918c-2b76-41f9-8f19-8d7e4eed1dc6",
       "name": "Mario",
       "email": "Lelia_Hansen@gmail.com",
       "phone": "178-778-5012",
@@ -77,9 +70,8 @@
         "longitude": "-128.4845"
       },
       "description": "Necessitatibus recusandae ullam voluptas qui totam nihil sunt."
-    },
+    }
     {
-      "id": "20d29540-dc6c-49fc-8f89-0d20ec20ccb6",
       "name": "Norbert",
       "email": "Doug.Larson@gmail.com",
       "phone": "375-092-0472",
@@ -90,9 +82,8 @@
         "longitude": "-158.1021"
       },
       "description": "Beatae sint ducimus aut."
-    },
+    }
     {
-      "id": "eb7710e1-3484-49b2-96dc-e3b1df76aad9",
       "name": "Alyson",
       "email": "Joaquin_Ruecker@hotmail.com",
       "phone": "1-338-295-4119 x620",
@@ -103,9 +94,8 @@
         "longitude": "-2.6106"
       },
       "description": "Nisi quibusdam ut sit nisi."
-    },
+    }
     {
-      "id": "9a78c475-cbac-4b6b-a4f6-469578ae1d08",
       "name": "Lucinda",
       "email": "Lesley_Raynor@gmail.com",
       "phone": "758.729.7405 x64426",
@@ -116,9 +106,8 @@
         "longitude": "179.2992"
       },
       "description": "Vitae voluptas praesentium eveniet quod dolore ut ex quo."
-    },
+    }
     {
-      "id": "a8ca26e3-755c-4c17-86c3-18bf494d900e",
       "name": "Amya",
       "email": "Odessa_Stehr51@gmail.com",
       "phone": "(535) 491-4710",
@@ -130,5 +119,3 @@
       },
       "description": "Quo distinctio qui id excepturi beatae et voluptatem."
     }
-  ]
-}
