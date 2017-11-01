@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/server.js',
@@ -7,6 +8,14 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'app.js'
   },
+  devtool: 'inline-source-map',
+  plugins: [
+    new webpack.BannerPlugin({
+      banner: 'require("source-map-support").install();',
+      raw: true,
+      entryOnly: false
+    })
+  ],
   module: {
     rules: [
       {
