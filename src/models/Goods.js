@@ -17,6 +17,7 @@ const GoodsSchema = new Schema({
   location:{
     lat: String,
     long: String,
+    address: String,
   },
   img: "URL:String",
   pickUpDate: Date,
