@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/BootcampersCollective/bc-freestyle-api.svg?columns=all)](http://waffle.io/BootcampersCollective/bc-freestyle-api)
 
 # Freestyle Hackathon: API
@@ -57,3 +58,7 @@ db.<nameOfCollectio>.find().pretty()
 ```
 
 This will show all the records inside that collection
+=======
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/BootcampersCollective/bc-freestyle-api.png?columns=all)](https://waffle.io/BootcampersCollective/bc-freestyle-api?utm_source=badge)
+# bc-freestyle-api
+>>>>>>> origin
